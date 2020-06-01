@@ -1145,7 +1145,7 @@ func (c *Client) GetShards(nodes []string) ([]Shard, error) {
 	var nodeRegexps []*regexp.Regexp
 
 	for _, node := range nodes {
-		nodeRegexp, err := regexp.Compile(node)
+		nodeRegexp, err := regexp.Compile("^" + node + "$")
 		if err != nil {
 			return nil, err
 		}
