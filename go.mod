@@ -1,4 +1,4 @@
-module github.com/github/vulcanizer
+module github.com/v-a/vulcanizer
 
 go 1.13
 
